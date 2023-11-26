@@ -1,8 +1,8 @@
-## **Welcome to InsurancePro CRM - Your Ultimate Insurance Agent Companion 🏆**
+## **Welcome to Clover 🍀**
 
-InsurancePro is a cutting-edge Customer Relationship Management (CRM) platform tailored specifically for insurance agents. This open-source solution empowers you to streamline your interactions, nurture leads, and enhance customer relationships. Built with ReactJS and the powerful MERN stack, InsurancePro is your one-stop shop for efficient client management.
+Clover aims to revolutionize the insurance industry by offering termed cash back home, auto, and life insurance. The mission of Clover Insurance is to make insurance fair and rewarding for consumers. This open-source repository allows our agents to streamline interactions, nurture leads, and enhance customer relationships. Built with ReactJS and the powerful MERN stack, the Clover web app is your one-stop shop for efficient insurance management.
 
-## **InsurancePro CRM**
+## **Clover CRM**
 
 **Key Features**
 
@@ -15,7 +15,7 @@ Ready to elevate your insurance business? Check out our Installation Guide to ge
 
 ## **Installation**
 
-Getting started with InsuranceCRM Pro is a breeze. Follow our comprehensive installation guide to set up the CRM in your local environment. Whether you're an experienced developer or new to the stack, our step-by-step instructions will have you up and running in no time.
+Getting started with the Clover CRM is a breeze. Follow our comprehensive installation guide to set up the CRM in your local environment. Whether you're an experienced developer or new to the stack, our step-by-step instructions will have you up and running in no time.
 
 Installation Guide
 
@@ -23,9 +23,9 @@ For detailed instructions and troubleshooting, refer to our [Installation Guide]
 
 ## **Contributing**
 
-Join the InsurancePro Community!
+Join the Clover Community!
 
-We welcome contributions from the community to make InsurancePro even better. Whether you're a developer, designer, or insurance industry expert, your input is invaluable. Here's how you can contribute:
+We welcome contributions from the community to make Clover even better. Whether you're a developer, designer, or insurance industry expert, your input is invaluable. Here's how you can contribute:
 
 1. Fork the repository and create a new branch for your feature/fix.
 2. Make your changes and submit a pull request.
@@ -37,19 +37,19 @@ For a complete guide on contributing, please refer to our Contributing Guideline
 ## **Support **
 We're Here to Help!
 
-Encountered a bug? Have a suggestion? Need a new feature? We're all ears. Our team is dedicated to providing top-notch support to ensure your experience with InsurancePro is seamless. Don't hesitate to open an issue or reach out to us at talent@prolinkinfotech.com.
+Encountered a bug? Have a suggestion? Need a new feature? We're all ears. Our team is dedicated to providing top-notch support to ensure your experience with InsurancePro is seamless. Don't hesitate to open an issue or reach out to us at support@myclover.ca
 
 ## **License**
 
 License Information
 
-InsurancePro is released under the MIT License. This means you're free to use, modify, and distribute the software. Refer to the full license text for more details.
+The Clover CRM is released under the MIT License. This means you're free to use, modify, and distribute the software. Refer to the full license text for more details.
 
 ## **Keeping in Touch**
 
 Customization and Beyond
 
-We understand that every insurance agency is unique. If you require custom features, enhancements, or even a fully tailored version of InsurancePro, our team is here to make it happen. Reach out to us at talent@prolinkinfotech.com to discuss your requirements.
+We understand that every insurance agency is unique. If you require custom features, enhancements, or even a fully tailored version of InsurancePro, our team is here to make it happen. Reach out to us at support@myclover.ca to discuss your requirements.
 
 ## **Demo**
 
@@ -71,4 +71,4 @@ Password: user123
 
 Stay Connected
 
-Follow us on social media to stay up-to-date with the latest InsurancePro updates, tips, and industry insights:
+Follow Clover on social media to stay up-to-date with the latest updates, tips, and industry insights:
