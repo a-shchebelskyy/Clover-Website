@@ -1,6 +1,6 @@
 ## **Welcome to Clover 🍀**
 
-Clover aims to revolutionize the insurance industry by offering termed cash back home, auto, and life insurance. The mission of Clover Insurance is to make insurance fair and rewarding for consumers. This open-source repository allows our agents to streamline interactions, nurture leads, and enhance customer relationships. Built with ReactJS and the powerful MERN stack, the Clover web app is your one-stop shop for efficient insurance management.
+Clover aims to revolutionize the insurance industry by offering termed cash back home, auto, and life insurance. Our open-source CRM allows agents to streamline interactions, nurture leads, and enhance customer relationships. Built with ReactJS and the powerful MERN stack, the Clover web app is your one-stop shop for efficient insurance management.
 
 ## **Clover CRM**
 
