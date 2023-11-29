@@ -31,7 +31,7 @@ Nav.propTypes = {
 
 export default function Nav({ openNav, onCloseNav }) {
   const user = JSON.parse(localStorage.getItem('user'));
-const navigate = useNavigate()
+  const navigate = useNavigate()
 
   const { pathname } = useLocation();
 
@@ -56,7 +56,7 @@ const navigate = useNavigate()
       }}
     >
       <Box sx={{ px: 2.5, py: 3, display: 'inline-flex', cursor: "pointer" }} onClick={home}>
-        <img src="/assets/logo prolink.png" width={150}  />
+        <img src="/assets/logo-full-1.png" width={150}  />
       </Box>
 
       {/* <Box sx={{ mb: 5, mx: 2.5 }}> */}

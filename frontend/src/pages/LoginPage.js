@@ -1,10 +1,13 @@
 /* eslint-disable jsx-a11y/alt-text */
+import { Helmet } from 'react-helmet-async';
 // @mui
 import { styled } from '@mui/material/styles';
-import {Container, Typography } from '@mui/material';
+import {Container, Typography, Box, Drawer } from '@mui/material';
+import { Link, useNavigate } from 'react-router-dom';
 // hooks
 import useResponsive from '../hooks/useResponsive';
 // components
+import Logo from '../components/logo';
 // sections
 import { LoginForm } from '../sections/auth/login';
 
@@ -39,13 +42,18 @@ const StyledContent = styled('div')(({ theme }) => ({
 // ----------------------------------------------------------------------
 
 export default function LoginPage() {
+  const navigate = useNavigate();
   const mdUp = useResponsive('up', 'md');
+
+  const home =()=>{
+    navigate('/')
+  }
 
   return (
     <>
-      {/* <Helmet>
-        <title> Login | Minimal UI </title>
-      </Helmet> */}
+      <Helmet>
+        <title>Clover | Login</title>
+      </Helmet>
 
       <StyledRoot>
         {/* <Logo
@@ -55,21 +63,34 @@ export default function LoginPage() {
             left: { xs: 16, sm: 24, md: 40 },
           }}
         /> */}
+        <Box 
+          sx={{
+            cursor: "pointer",
+            position: 'fixed',
+            top: { xs: 16, sm: 24, md: 40 },
+            left: { xs: 16, sm: 24, md: 40 },
+          }} 
+          onClick={home}>
+          <img src="/favicon/favicon-32x32.png" width={32} alt="logo" />
+        </Box>
 
         {mdUp && (
           <StyledSection>
-            <Typography variant="h3" sx={{ px: 5, mt: 10, mb: 5 }}>
+            {/* <Typography variant="h3" sx={{ px: 5, mt: 10, mb: 5 }}>
               Hi, Welcome Back
-            </Typography>
-            <img src="/assets/illustrations/illustration_login.png" alt="login" />
+            </Typography> */}
+            <img src="/assets/images/covers/cover-login.png" height="1024" width="482" alt="login"/>
           </StyledSection>
         )}
 
         <Container maxWidth="sm">
           <StyledContent>
-          <img src="/assets/logo prolink.png" width={250} style={{marginLeft:"-7px"}}/>
-            <Typography variant="h4" gutterBottom mb={4}>
-              Sign in to SureCRM
+          {/* <img src="/assets/logo prolink.png" width={250} style={{marginLeft:"-7px"}}/> */}
+            <Typography variant="body1">
+              Welcome back!
+            </Typography>
+            <Typography variant="h3" gutterBottom mb={4}>
+              Login to Clover
             </Typography>
 
             
@@ -95,6 +116,11 @@ export default function LoginPage() {
             </Divider> */}
 
             <LoginForm />
+
+            <Typography variant="subtitle2" sx={{ mt: 5 }}>
+              Don’t have an account? 
+              <Link to="/register"> Sign up for free </Link>
+            </Typography>
           </StyledContent>
         </Container>
       </StyledRoot>

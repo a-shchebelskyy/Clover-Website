@@ -5,12 +5,13 @@ import { Navigate, Route, Routes, useNavigate } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import Routers from './routes';
 import UserRoutes from './UserRouters'
-
 // theme
 // components
 import { StyledChart } from './components/chart';
 import ScrollToTop from './components/scroll-to-top';
+import Home from './pages/home';
 import LoginPage from './pages/LoginPage';
+import RegisterPage from './pages/RegisterPage';
 import 'react-toastify/dist/ReactToastify.css';
 import ThemeProvider from './theme';
 
@@ -33,9 +34,10 @@ export default function App() {
         user?.role === 'admin' ? <Routers /> : user?.role === 'user' ? <UserRoutes /> : undefined
       ) : (
         <Routes>
+          <Route path="/" element={<Home />} />
           <Route path="/login" element={<LoginPage />} />
-          <Route path="*" element={<Navigate to="/login" />} />
-
+          <Route path="/register" element={<RegisterPage />} />
+          {/* <Route path="*" element={<Navigate to="/login" />} /> */}
         </Routes>
       )}
     </ThemeProvider>

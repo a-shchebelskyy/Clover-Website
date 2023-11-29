@@ -1,8 +1,8 @@
 import { Helmet } from 'react-helmet-async';
 // @mui
 import { styled } from '@mui/material/styles';
-import {Container, Typography, Divider, Stack, Button } from '@mui/material';
-import { Link } from 'react-router-dom';
+import {Container, Typography, Box, Drawer, Divider, Stack, Button } from '@mui/material';
+import { Link, useNavigate } from 'react-router-dom';
 // hooks
 import useResponsive from '../hooks/useResponsive';
 // components
@@ -42,39 +42,51 @@ const StyledContent = styled('div')(({ theme }) => ({
 // ----------------------------------------------------------------------
 
 export default function RegisterPage() {
+  const navigate = useNavigate();
   const mdUp = useResponsive('up', 'md');
+
+  const home =()=>{
+    navigate('/')
+  }
 
   return (
     <>
       <Helmet>
-        <title> Login | Minimal UI </title>
+        <title>Clover | Sign Up</title>
       </Helmet>
 
       <StyledRoot>
-        <Logo
+        {/* <Logo
           sx={{
             position: 'fixed',
             top: { xs: 16, sm: 24, md: 40 },
             left: { xs: 16, sm: 24, md: 40 },
           }}
-        />
+        /> */}
+        <Box 
+          sx={{
+            cursor: "pointer",
+            position: 'fixed',
+            top: { xs: 16, sm: 24, md: 40 },
+            left: { xs: 16, sm: 24, md: 40 },
+          }} 
+          onClick={home}>
+          <img src="/favicon/favicon-32x32.png" width={32} alt="logo" />
+        </Box>
 
         {mdUp && (
           <StyledSection>
-            <img src="/assets/illustrations/illustration_register.jpg" alt="register" />
+            <img src="/assets/images/covers/cover-login.png" height="1024" width="482" alt="register" />
           </StyledSection>
         )}
 
         <Container maxWidth="sm">
           <StyledContent>
-            <Typography variant="h4" gutterBottom>
-              Sign up to Minimal
+            <Typography variant="h3" gutterBottom mb={4}>
+              Sign up to Clover
             </Typography>
 
-            <Typography variant="body2" sx={{ mb: 5 }}>
-              Do have an account? 
-              <Link to="/login">Sign In</Link>
-            </Typography>
+            
 
             {/* <Stack direction="row" spacing={2}>
               <Button fullWidth size="large" color="inherit" variant="outlined">
@@ -97,6 +109,11 @@ export default function RegisterPage() {
             </Divider> */}
 
             <RegisterForm />
+
+            <Typography variant="subtitle2" sx={{ mt: 5 }}>
+              Already have an account?
+              <Link to="/login"> Login </Link>
+            </Typography>
           </StyledContent>
         </Container>
       </StyledRoot>
