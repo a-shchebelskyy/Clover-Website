@@ -76,7 +76,7 @@ export default function RegisterPage() {
 
         {mdUp && (
           <StyledSection>
-            <img src="/assets/images/covers/cover-login.png" height="1024" width="482" alt="register" />
+            <img src="/assets/images/covers/cover-login-2.png" alt="register" />
           </StyledSection>
         )}
 

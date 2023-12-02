@@ -82,7 +82,7 @@ export default function Header() {
         <StyledRoot>
                 <StyledToolbar>
                     <Box sx={{ py: 3, display: 'inline-flex', cursor: "pointer" }} onClick={home}>
-                        <img src="/assets/logo-full-1.png" height={40}  />
+                        <img src="/assets/logo-full.png" height={40}  />
                     </Box>
                     <NavLinks>
                         <ListItemButton
